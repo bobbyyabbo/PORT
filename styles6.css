@@ -1,0 +1,402 @@
+body {
+  background-color: rgb(243, 243, 234);
+}
+
+tml, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	background-color: rgb(243, 243, 234);
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*response nav*/
+
+.topnav {
+  background-color: #333;
+  font-family: sans-serif;
+  position: fixed;
+  width: 100%;
+  margin: 0;
+  z-index: 2;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  
+}
+
+.topnav > a:hover {
+  color: #fff;
+  background-color: #333;
+  box-shadow: inset 0px 2px 4px rgba(0,255,255,0.3), 
+              inset 0px 4px 8px rgba(0,255,255,0.3), 
+              inset 0px 8px 16px rgba(0,255,255,0.3);
+  transition: 0.2s;
+  transform: translateY(2px);
+  cursor: pointer; 
+}
+
+.active {
+  background-color: #4d4d4d;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+  font-family: sans-serif;
+  font-size: 25px;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: sans-serif;
+  margin: 0;
+
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 2;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  color: #fff;
+  background-color: #333;
+  box-shadow: inset 0px 2px 4px rgba(0,255,255,0.3), 
+              inset 0px 4px 8px rgba(0,255,255,0.3), 
+              inset 0px 8px 16px rgba(0,255,255,0.3);
+  transition: 0.2s;
+  transform: translateY(2px);
+  cursor: pointer; 
+}
+
+.dropdown-content a:hover {
+  color: #fff;
+  background-color: #333;
+  box-shadow: inset 0px 2px 4px rgba(0,255,255,0.3), 
+              inset 0px 4px 8px rgba(0,255,255,0.3), 
+              inset 0px 8px 16px rgba(0,255,255,0.3);
+  transition: 0.2s;
+  transform: translateY(2px);
+  cursor: pointer; 
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  color: white;
+  background-color: #333;
+  cursor: pointer; 
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+/*resp nav end*/
+
+
+
+.welcome-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding-top: 25px;
+  background-image: url('https://lh3.googleusercontent.com/4fG3-YmMx9sgEqKElxDLAUlOTrpyP_xp_nR50NNXvBXKCzhdU5W8UyxFnHBMSpc3BrKpz4PUfDxkZbsMfenasz6EY29qvFywRe_vTrDRynxOVEAlY_9Y-jtW00gCzJIi-9P5d12sOrr8IgiOL9ihShjyZlXMzWrWuWy6u2-3TGYjjHnipd1YGed7PHBWwO-ZllUKbMzZ3dIQ1nB8wWG1YS-e7WpmbwfLTbCzlZQzn7h8tdlK6WlkGn80L4kA9IOUs_HGnJMvvflLq3CKC_rUS4J97Ihk5beYz2VRO1mgy4b6dsRpns1FWrJsxUYFMG6ZqFlQkgvwmQS13ZyAs8feOiYeSChnlj6GbAwx_ZclU9ZAU8ReB4P8WcGqcSCnyJPaURZKy9I5ZPRv3_V5MxoT51XnLgAE7mJGMXvzzGuL3tTyKc9qLQdAV_pQIL7mV5wMrMiE3ON_9TpDzLt0jpNTEmqiG3bopGLY-mQLHHm6aJMrhRibzklyhktrzFSo-vAt8ZmCKbeR86763bmgwqUP6-y01Xo1yFhz9JekwKJ36nQbuRKew6PxUNsjobuiujK43ej0Pwj5BklLzNmWp-fkV2Hzl_ncgdRKE8k0vCHd91xy_JewNYm2IdbSHFuRHohOp7buYl4crizsFsdxUCThi72iYVlKfM0EoMJLEox5V2vVxZvxvDdhPnQ7rvtq3q4cH4mrelIjECvt3YHeMePt9tLJwI4WvbkRprO0v76erOhGR3xaBbWkudHebXdbxrsCsRnumhH7rZcxT2rwRu8k-ZJACKMyjsbU6w5pkOME0_3DkW2mPx9AUj7nCSOH8hUGXF_Q0d6EU3-q1uowne_cjY2b_XQcE2Lp_DvlaVrTeXuj6XLG8HWKF-lCyadHq0iXeSWxid0oqUHswYlBkBQOVPFrX68slAs7Vjo64vxCxS57=w1709-h961-no?authuser=0');
+  border-radius: 25px%;
+  border: double;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+
+}
+
+.welcome-section > h1 {
+  font-size: 5vw;
+  font-weight: 200;
+  font-family: sans-serif;
+  font-style: italic;
+  text-decoration: underline;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px #00cccc, 0 0 5px darkblue;
+}
+
+.welcome-section > p {
+  font-size: 3vw;;
+  font-family:sans-serif;
+  font-style: italic;
+   text-align: center;
+   color: white;
+   text-shadow: 1px 1px 2px black, 0 0 25px #00cccc, 0 0 5px darkblue;
+}
+
+.welcome-section {
+  margin-bottom: 100px;
+}
+
+.welcome-section > img {
+  border-radius: 50%;
+  padding: 25px;
+  
+}
+
+.projects > h1 {
+  font-size: 3vw;
+  font-family:sans-serif;
+  margin-left: 60px;
+  text-decoration: underline;
+  
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+
+
+/*video section*/
+
+
+
+.videos > h1 {
+  font-size: 3vw;
+  font-family:sans-serif;
+  margin-right: 1400px;
+  text-decoration: underline;
+  
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+iframe {
+  padding: 10px;
+}
+
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+
+/*social links*/
+
+
+  .socials > a {
+  background-color: red;
+  box-shadow: -5px 5px 3px #333333;
+  color: white;
+  padding: 1em 1.7em;
+  position: relative;
+  text-decoration: none;
+  width: auto;
+  height: auto;
+  text-align: center;
+  font-family: sans-serif;  
+  z-index: 1;
+  background: #666666;
+  margin: 25px;
+  margin-top: 75px;
+}
+
+.socials > a:hover {
+  color: #fff;
+  background-color: #333;
+  box-shadow: inset 0px 2px 4px rgba(0,255,255,0.3), 
+              inset 0px 4px 8px rgba(0,255,255,0.3), 
+              inset 0px 8px 16px rgba(0,255,255,0.3);
+  transition: 0.2s;
+  transform: translateY(2px);
+  cursor: pointer; 
+}
+
+.socials > a:active {
+  box-shadow: none;
+  top: 5px;
+}
+
+body > .socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+
+
+.socials {
+  margin: auto;
+  padding: 20px 30px 20px 30px;
+  width: fit-content;
+  box-sizing: border-box;
+  border: solid 4px white;
+  text-align: center;
+  font-size: 20px;
+  word-spacing: 20px;
+  font-size: 24px;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+
+.contact-section {
+  margin-top: 0;
+  text-align: center;  
+}
+
+/*grid*/
+
+.grid { 
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  grid-gap: 20px;
+  align-items: stretch;
+  }
+.grid img {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+  max-width: 100%;
+}
+
+.bio {
+      background-color: #1a1a1a;
+      color: white;
+      width: 100%;
+      height: 170px;
+      padding-top: 100px;
+      text-align: center;
+      font-family: sans-serif;
+	  font-size: 25px;
+      
+	  
+	  
+}
+  
+.bio > p {
+  line-height: normal;
+  display: inline-block;
+  vertical-align: middle;
+max-width: 50%;
+}
+
+
+.toggle {
+      background-color: #666666;
+      color: white;
+      width: 100%;
+      height: 90x;
+      
+      text-align: center;
+      font-family: sans-serif;
+	  font-size: 25px;	
+}
+

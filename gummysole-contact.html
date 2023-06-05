@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class=>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles6.css" />
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    
+    $(".toggle-btn").click(function(){
+        $("p").toggle();
+    });
+});
+</script>
+	
+  </head>
+  <body>
+    <main>
+	
+	<div class="topnav" id="myTopnav">
+  <a href="gummysole.html" class="active">GUMMYSOLE - HOME</a>
+  <div class="dropdown">
+  <button class="dropbtn">▼</button>
+  <div class="dropdown-content">
+    <a href="gummysole.html">HOME PAGE</a>
+    <a href="gummysole-about.html">ABOUT</a>
+    <a href="gummysole-contact.html">CONTACT</a>
+  </div>
+ </div>
+ 
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+            <div class="socials" id="socials">
+	  <a href="https://www.instagram.com/gummysole/" target="_blank">INSTAGRAM</a>
+	  <a href="https://www.youtube.com/channel/UCNAhIUa1aVN0vRga6IzvV4w" target="_blank">YOUTUBE</a>
+      <a href="https://www.linkedin.com/in/erik-meyer-9463b0208" target="_blank">LINKEDIN</a>
+	         </div>
+	</section> 
+	
+	<div class="toggle">
+	<button type="button" class="toggle-btn">SHOW/HIDE</button> 
+    <p>8emeyer@gmail.com</p>
+	</div>
+ 
+	
+<main class="grid">
+  <img src="pimg10.jpg">
+  <img src="pimg11.jpg">
+  <img src="pimg12.jpg">
+</main>
+
+
+	  
+	</main>
+    </body>
+  </html>
